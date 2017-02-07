@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B5BE13DE1D4AE45E3E64E0B /* Pods_GeekInformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE31EE658FE34E427986F172 /* Pods_GeekInformer.framework */; };
+		C368BAE71E463A99003E99B4 /* Trends.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368BAE61E463A99003E99B4 /* Trends.swift */; };
+		C38CF31A1E47F7D3001F0BCE /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C38CF3191E47DB65001F0BCE /* Roboto-Regular.ttf */; };
 		C3F58B4B1E44D19C00A23EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F58B4A1E44D19C00A23EC1 /* AppDelegate.swift */; };
 		C3F58B4D1E44D19C00A23EC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F58B4C1E44D19C00A23EC1 /* ViewController.swift */; };
 		C3F58B501E44D19C00A23EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F58B4E1E44D19C00A23EC1 /* Main.storyboard */; };
@@ -15,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15234063244D64E133449F86 /* Pods-GeekInformer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekInformer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeekInformer/Pods-GeekInformer.release.xcconfig"; sourceTree = "<group>"; };
+		25929987CA8F4A6D22F0B119 /* Pods-GeekInformer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekInformer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeekInformer/Pods-GeekInformer.debug.xcconfig"; sourceTree = "<group>"; };
+		AE31EE658FE34E427986F172 /* Pods_GeekInformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekInformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C368BAE61E463A99003E99B4 /* Trends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trends.swift; sourceTree = "<group>"; };
+		C38CF3191E47DB65001F0BCE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		C3F58B471E44D19C00A23EC1 /* GeekInformer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekInformer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F58B4A1E44D19C00A23EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3F58B4C1E44D19C00A23EC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +37,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5BE13DE1D4AE45E3E64E0B /* Pods_GeekInformer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4388B6F77727AD4BE27F1F97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE31EE658FE34E427986F172 /* Pods_GeekInformer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD8423EE33B71EF90877ED73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25929987CA8F4A6D22F0B119 /* Pods-GeekInformer.debug.xcconfig */,
+				15234063244D64E133449F86 /* Pods-GeekInformer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C38CF3181E47DB5A001F0BCE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C38CF3191E47DB65001F0BCE /* Roboto-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		C3F58B3E1E44D19C00A23EC1 = {
 			isa = PBXGroup;
 			children = (
 				C3F58B491E44D19C00A23EC1 /* GeekInformer */,
 				C3F58B481E44D19C00A23EC1 /* Products */,
+				AD8423EE33B71EF90877ED73 /* Pods */,
+				4388B6F77727AD4BE27F1F97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +90,10 @@
 		C3F58B491E44D19C00A23EC1 /* GeekInformer */ = {
 			isa = PBXGroup;
 			children = (
+				C38CF3181E47DB5A001F0BCE /* Fonts */,
 				C3F58B4A1E44D19C00A23EC1 /* AppDelegate.swift */,
 				C3F58B4C1E44D19C00A23EC1 /* ViewController.swift */,
+				C368BAE61E463A99003E99B4 /* Trends.swift */,
 				C3F58B4E1E44D19C00A23EC1 /* Main.storyboard */,
 				C3F58B511E44D19C00A23EC1 /* Assets.xcassets */,
 				C3F58B531E44D19C00A23EC1 /* LaunchScreen.storyboard */,
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3F58B591E44D19C00A23EC1 /* Build configuration list for PBXNativeTarget "GeekInformer" */;
 			buildPhases = (
+				9AE8213AA21165F015969DBC /* [CP] Check Pods Manifest.lock */,
 				C3F58B431E44D19C00A23EC1 /* Sources */,
 				C3F58B441E44D19C00A23EC1 /* Frameworks */,
 				C3F58B451E44D19C00A23EC1 /* Resources */,
+				B29BB4621CEEF0AF0E5D0556 /* [CP] Embed Pods Frameworks */,
+				D56B6C5C14C541E1FEC890C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C38CF31A1E47F7D3001F0BCE /* Roboto-Regular.ttf in Resources */,
 				C3F58B551E44D19C00A23EC1 /* LaunchScreen.storyboard in Resources */,
 				C3F58B521E44D19C00A23EC1 /* Assets.xcassets in Resources */,
 				C3F58B501E44D19C00A23EC1 /* Main.storyboard in Resources */,
@@ -132,12 +174,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9AE8213AA21165F015969DBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B29BB4621CEEF0AF0E5D0556 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeekInformer/Pods-GeekInformer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D56B6C5C14C541E1FEC890C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeekInformer/Pods-GeekInformer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3F58B431E44D19C00A23EC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C3F58B4D1E44D19C00A23EC1 /* ViewController.swift in Sources */,
+				C368BAE71E463A99003E99B4 /* Trends.swift in Sources */,
 				C3F58B4B1E44D19C00A23EC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +350,7 @@
 		};
 		C3F58B5A1E44D19C00A23EC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25929987CA8F4A6D22F0B119 /* Pods-GeekInformer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3Z52UR7LAJ;
@@ -272,6 +364,7 @@
 		};
 		C3F58B5B1E44D19C00A23EC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15234063244D64E133449F86 /* Pods-GeekInformer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3Z52UR7LAJ;
@@ -302,6 +395,7 @@
 				C3F58B5B1E44D19C00A23EC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
