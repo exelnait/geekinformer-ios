@@ -6,8 +6,7 @@
     //
     
     import Foundation
-    import Alamofire
-    import SwiftyJSON
+    import UIKit
     
     class TrendsScreen{
         
