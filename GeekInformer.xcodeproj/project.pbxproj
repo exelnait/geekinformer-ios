@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5B5BE13DE1D4AE45E3E64E0B /* Pods_GeekInformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE31EE658FE34E427986F172 /* Pods_GeekInformer.framework */; };
-		C368BAE71E463A99003E99B4 /* Trends.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368BAE61E463A99003E99B4 /* Trends.swift */; };
+		C368BAE71E463A99003E99B4 /* NewsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368BAE61E463A99003E99B4 /* NewsCard.swift */; };
 		C3813AF61E4C949E0059E762 /* ScrollCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3813AF51E4C949E0059E762 /* ScrollCreate.swift */; };
 		C3813AF81E4CA8DC0059E762 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3813AF71E4CA8DC0059E762 /* Roboto-Regular.ttf */; };
+		C3ED6CC01E50A9A200423208 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CBF1E50A9A100423208 /* ApiService.swift */; };
+		C3ED6CC21E50A9B500423208 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CC11E50A9B500423208 /* ApiManager.swift */; };
+		C3ED6CC41E50C24F00423208 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CC31E50C24F00423208 /* NewsViewController.swift */; };
+		C3ED6CC71E50E02600423208 /* LabelSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CC61E50E02600423208 /* LabelSectionController.swift */; };
+		C3ED6CCA1E51222800423208 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CC91E51222800423208 /* LabelCell.swift */; };
+		C3ED6CCC1E51224E00423208 /* SpinnerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CCB1E51224E00423208 /* SpinnerCell.swift */; };
 		C3F58B4B1E44D19C00A23EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F58B4A1E44D19C00A23EC1 /* AppDelegate.swift */; };
 		C3F58B4D1E44D19C00A23EC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F58B4C1E44D19C00A23EC1 /* ViewController.swift */; };
 		C3F58B501E44D19C00A23EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F58B4E1E44D19C00A23EC1 /* Main.storyboard */; };
@@ -22,9 +28,15 @@
 		15234063244D64E133449F86 /* Pods-GeekInformer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekInformer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeekInformer/Pods-GeekInformer.release.xcconfig"; sourceTree = "<group>"; };
 		25929987CA8F4A6D22F0B119 /* Pods-GeekInformer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekInformer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeekInformer/Pods-GeekInformer.debug.xcconfig"; sourceTree = "<group>"; };
 		AE31EE658FE34E427986F172 /* Pods_GeekInformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekInformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C368BAE61E463A99003E99B4 /* Trends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trends.swift; path = GeekInformer/Trends.swift; sourceTree = "<group>"; };
+		C368BAE61E463A99003E99B4 /* NewsCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsCard.swift; path = GeekInformer/NewsCard.swift; sourceTree = "<group>"; };
 		C3813AF51E4C949E0059E762 /* ScrollCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollCreate.swift; sourceTree = "<group>"; };
 		C3813AF71E4CA8DC0059E762 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../Roboto-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		C3ED6CBF1E50A9A100423208 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		C3ED6CC11E50A9B500423208 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		C3ED6CC31E50C24F00423208 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		C3ED6CC61E50E02600423208 /* LabelSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSectionController.swift; sourceTree = "<group>"; };
+		C3ED6CC91E51222800423208 /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		C3ED6CCB1E51224E00423208 /* SpinnerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerCell.swift; sourceTree = "<group>"; };
 		C3F58B471E44D19C00A23EC1 /* GeekInformer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekInformer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F58B4A1E44D19C00A23EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = GeekInformer/AppDelegate.swift; sourceTree = "<group>"; };
 		C3F58B4C1E44D19C00A23EC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = GeekInformer/ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +96,7 @@
 			children = (
 				C3F58B4C1E44D19C00A23EC1 /* ViewController.swift */,
 				C3813AF51E4C949E0059E762 /* ScrollCreate.swift */,
+				C3ED6CC31E50C24F00423208 /* NewsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -119,15 +132,44 @@
 		C3813AF91E4CA93D0059E762 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C368BAE61E463A99003E99B4 /* Trends.swift */,
+				C368BAE61E463A99003E99B4 /* NewsCard.swift */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		C3ED6CBE1E50A95400423208 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C3ED6CBF1E50A9A100423208 /* ApiService.swift */,
+				C3ED6CC11E50A9B500423208 /* ApiManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		C3ED6CC51E50DFF700423208 /* SectionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3ED6CC61E50E02600423208 /* LabelSectionController.swift */,
+			);
+			name = SectionControllers;
+			sourceTree = "<group>";
+		};
+		C3ED6CC81E5121C700423208 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3ED6CC91E51222800423208 /* LabelCell.swift */,
+				C3ED6CCB1E51224E00423208 /* SpinnerCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		C3F58B3E1E44D19C00A23EC1 = {
 			isa = PBXGroup;
 			children = (
+				C3ED6CC81E5121C700423208 /* View */,
+				C3ED6CBE1E50A95400423208 /* API */,
 				C3813AEF1E4C8D250059E762 /* Application Delegate */,
+				C3ED6CC51E50DFF700423208 /* SectionControllers */,
 				C3813AF11E4C8D390059E762 /* View Controllers */,
 				C3813AF91E4CA93D0059E762 /* Classes */,
 				C3813AF31E4C8D7E0059E762 /* Storyboards */,
@@ -272,9 +314,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3ED6CC71E50E02600423208 /* LabelSectionController.swift in Sources */,
 				C3813AF61E4C949E0059E762 /* ScrollCreate.swift in Sources */,
 				C3F58B4D1E44D19C00A23EC1 /* ViewController.swift in Sources */,
-				C368BAE71E463A99003E99B4 /* Trends.swift in Sources */,
+				C3ED6CCC1E51224E00423208 /* SpinnerCell.swift in Sources */,
+				C3ED6CC01E50A9A200423208 /* ApiService.swift in Sources */,
+				C368BAE71E463A99003E99B4 /* NewsCard.swift in Sources */,
+				C3ED6CC41E50C24F00423208 /* NewsViewController.swift in Sources */,
+				C3ED6CC21E50A9B500423208 /* ApiManager.swift in Sources */,
+				C3ED6CCA1E51222800423208 /* LabelCell.swift in Sources */,
 				C3F58B4B1E44D19C00A23EC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
