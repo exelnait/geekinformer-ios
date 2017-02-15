@@ -28,7 +28,6 @@ final class NewsViewController : UIViewController, IGListAdapterDataSource, UISc
             adapter.collectionView = collectionView
             adapter.dataSource = self
             adapter.scrollViewDelegate = self
-            ApiManager.getUserNews()
         }
         
         override func viewDidLayoutSubviews() {
@@ -43,6 +42,7 @@ final class NewsViewController : UIViewController, IGListAdapterDataSource, UISc
             
             if loading {
                 objects.append(spinToken as IGListDiffable)
+                //objects = ApiManager.getUserNews()
             }
             
             return objects
@@ -77,6 +77,5 @@ final class NewsViewController : UIViewController, IGListAdapterDataSource, UISc
                 }
             }
         }
-        
     }
 

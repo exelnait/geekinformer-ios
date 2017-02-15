@@ -11,12 +11,11 @@ import Alamofire
 import SwiftyJSON
 
 class ApiManager{
-    class func getUserNews(){
+    class func getUserNews(completionHandler: @escaping ([NewsCard]) -> Void ){
         ApiService.getUserNews().responseJSON { response in
        if let value = response.result.value
         {
         var json = JSON(value)
-            print(json)
         var objects = [NewsCard]()
         var title = String()
         var author = String()
@@ -27,19 +26,18 @@ class ApiManager{
         for item in 0...json["data"].count
         {
             
-            title = json["data"][item]["title"].stringValue
-            author = json["data"][item]["author"].stringValue
-            published_date_human = json["data"][item]["published_date_human"].stringValue
-            type = json["data"][item]["type"].stringValue
-            if let url = NSURL(string: json["data"][item]["logo"].stringValue) {
+            title = json["data"]["rss"][item]["title"].stringValue
+            author = json["data"]["rss"][item]["author"].stringValue
+            published_date_human = json["data"]["rss"][item]["published_date_human"].stringValue
+            type = json["data"]["rss"][item]["type"].stringValue
+            if let url = NSURL(string: json["data"]["rss"][item]["logo"].stringValue) {
                 if let data = NSData(contentsOf: url as URL) {
                     logo = UIImage(data: data as Data)!
                 }
-                
-        }
-            
+            }
             objects.append(NewsCard.init(title: title, author: author, published_date_human: published_date_human, type: type, logo: logo!))
-                }
+         }
+            completionHandler(objects)
             }
         }
     }

@@ -12,7 +12,7 @@ final class LabelSectionController: IGListSectionController, IGListSectionType {
     }
     
     func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: collectionContext!.containerSize.width, height: 55)
+        return CGSize(width: collectionContext!.containerSize.width, height: 300)
     }
     
     func cellForItem(at index: Int) -> UICollectionViewCell {
