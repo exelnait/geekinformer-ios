@@ -10,7 +10,6 @@
 		5B5BE13DE1D4AE45E3E64E0B /* Pods_GeekInformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE31EE658FE34E427986F172 /* Pods_GeekInformer.framework */; };
 		C368BAE71E463A99003E99B4 /* NewsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368BAE61E463A99003E99B4 /* NewsCard.swift */; };
 		C3813AF61E4C949E0059E762 /* ScrollCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3813AF51E4C949E0059E762 /* ScrollCreate.swift */; };
-		C3813AF81E4CA8DC0059E762 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3813AF71E4CA8DC0059E762 /* Roboto-Regular.ttf */; };
 		C3ED6CC01E50A9A200423208 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CBF1E50A9A100423208 /* ApiService.swift */; };
 		C3ED6CC21E50A9B500423208 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CC11E50A9B500423208 /* ApiManager.swift */; };
 		C3ED6CC41E50C24F00423208 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CC31E50C24F00423208 /* NewsViewController.swift */; };
@@ -30,7 +29,6 @@
 		AE31EE658FE34E427986F172 /* Pods_GeekInformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekInformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C368BAE61E463A99003E99B4 /* NewsCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsCard.swift; path = GeekInformer/NewsCard.swift; sourceTree = "<group>"; };
 		C3813AF51E4C949E0059E762 /* ScrollCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollCreate.swift; sourceTree = "<group>"; };
-		C3813AF71E4CA8DC0059E762 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../Roboto-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		C3ED6CBF1E50A9A100423208 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		C3ED6CC11E50A9B500423208 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		C3ED6CC31E50C24F00423208 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -75,14 +73,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C3813AEC1E4C8CFF0059E762 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				C3813AF71E4CA8DC0059E762 /* Roboto-Regular.ttf */,
-			);
-			name = Fonts;
-			sourceTree = "<group>";
-		};
 		C3813AEF1E4C8D250059E762 /* Application Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				C3F58B511E44D19C00A23EC1 /* Assets.xcassets */,
-				C3813AEC1E4C8CFF0059E762 /* Fonts */,
 			);
 			name = Resources;
 			path = GeekInformer;
@@ -224,7 +213,7 @@
 				TargetAttributes = {
 					C3F58B461E44D19C00A23EC1 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3Z52UR7LAJ;
+						DevelopmentTeam = ZX2AU84SHF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -254,7 +243,6 @@
 			files = (
 				C3F58B551E44D19C00A23EC1 /* LaunchScreen.storyboard in Resources */,
 				C3F58B521E44D19C00A23EC1 /* Assets.xcassets in Resources */,
-				C3813AF81E4CA8DC0059E762 /* Roboto-Regular.ttf in Resources */,
 				C3F58B501E44D19C00A23EC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,7 +435,7 @@
 			baseConfigurationReference = 25929987CA8F4A6D22F0B119 /* Pods-GeekInformer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3Z52UR7LAJ;
+				DEVELOPMENT_TEAM = ZX2AU84SHF;
 				INFOPLIST_FILE = GeekInformer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RGS.GeekInformer;
@@ -461,7 +449,7 @@
 			baseConfigurationReference = 15234063244D64E133449F86 /* Pods-GeekInformer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3Z52UR7LAJ;
+				DEVELOPMENT_TEAM = ZX2AU84SHF;
 				INFOPLIST_FILE = GeekInformer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RGS.GeekInformer;

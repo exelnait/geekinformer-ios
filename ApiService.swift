@@ -8,11 +8,12 @@
 
 import Foundation
 import Alamofire
+import RxAlamofire
+import RxSwift
 import SwiftyJSON
 
 class ApiService{
-    class func getUserNews()-> DataRequest{
-        let response = Alamofire.request("https://geekinformer.net/api/1/news/last")
-        return response
+    class func getUserNews()-> Observable<DataRequest>{
+        return request(.get, "https://geekinformer.net/api/1/news/last")
     }
 }
