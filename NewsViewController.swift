@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import IGListKit
+import RxSwift
 
 final class NewsViewController : UIViewController, IGListAdapterDataSource, UIScrollViewDelegate {
 
@@ -28,8 +29,15 @@ final class NewsViewController : UIViewController, IGListAdapterDataSource, UISc
             adapter.collectionView = collectionView
             adapter.dataSource = self
             adapter.scrollViewDelegate = self
-            ApiManager.getUserNews().subscribe { (data) in
+            ApiManager.getUserNews().subscribe(onNext: { (data) -> Void in
+                // Pumped out an int
                 print(data)
+            }, onError: { (error) -> Void in
+                // ERROR!
+            }, onCompleted: { () -> Void in
+                // There are no more signals
+            }) { () -> Void in
+                // We disposed this subscription
             }
         }
         

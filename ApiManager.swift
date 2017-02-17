@@ -1,11 +1,3 @@
-//
-//  ApiManager.swift
-//  GeekInformer
-//
-//  Created by Рауф on 12.02.17.
-//  Copyright © 2017 Рауф. All rights reserved.
-//
-
 import Foundation
 import Alamofire
 import SwiftyJSON
@@ -39,29 +31,29 @@ class ApiManager{
 //            }
 //        }
 //    }
-    class func getUserNews() -> Observable<[NewsCard]> {
-        return ApiService.getUserNews().map { response in
-            var data = JSON(response)["data"]
-            var cards = [NewsCard]()
-            var title = String()
-            var author = String()
-            var published_date_human = String()
-            var type = String()
-            var logo = UIImage.init(named: "error.png")
+    class func getUserNews() -> Observable<Any> {
+        return ApiService.getUserNews().map { (response, data) in
+            var data = JSON(data)["data"]
+//            var cards = Array<NewsCard>()
 
-            for item in 0...data.count {
-                title = data["rss"][item]["title"].stringValue
-                author = data["rss"][item]["author"].stringValue
-                published_date_human = data["rss"][item]["published_date_human"].stringValue
-                type = data["rss"][item]["type"].stringValue
-                if let url = NSURL(string: data["rss"][item]["logo"].stringValue) {
-                    if let data = NSData(contentsOf: url as URL) {
-                        logo = UIImage(data: data as Data)!
-                    }
-                }
-                cards.append(NewsCard.init(title: title, author: author, published_date_human: published_date_human, type: type, logo: logo!))
-            }
-            return cards
+//            for item in data["rss"] {
+//                var title = String()
+//                var author = String()
+//                var published_date_human = String()
+//                var type = String()
+//                var logo = UIImage.init(named: "error.png")
+//                title = item["title"].stringValue
+//                author = item["author"].stringValue
+//                published_date_human = item["published_date_human"].stringValue
+//                type = item["type"].stringValue
+//                if let url = NSURL(string: item["logo"].stringValue) {
+//                    if let data = NSData(contentsOf: url as URL) {
+//                        logo = UIImage(data: data as Data)!
+//                    }
+//                }
+//                cards.append(NewsCard.init(title: title, author: author, published_date_human: published_date_human, type: type, logo: logo!))
+//            }
+            return [1,2,3]
         }
     }
 }

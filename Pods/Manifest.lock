@@ -1,18 +1,32 @@
 PODS:
   - Alamofire (4.3.0)
   - IGListKit (2.0.0)
+  - RxAlamofire (3.0.2):
+    - RxAlamofire/Core (= 3.0.2)
+  - RxAlamofire/Core (3.0.2):
+    - Alamofire (~> 4.0)
+    - RxSwift (~> 3.0)
+  - RxCocoa (3.2.0):
+    - RxSwift (~> 3.1)
+  - RxSwift (3.2.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3)
   - IGListKit (~> 2.0.0)
+  - RxAlamofire
+  - RxCocoa (~> 3.0)
+  - RxSwift (~> 3.0)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   IGListKit: ee255e4e61865bc3e01ca96b690c5435c2887849
+  RxAlamofire: bc53604b29fd2d220cfaa490c736cc4500819f34
+  RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
+  RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 3535538405cb06b1da3d1cd48259145995bf0906
+PODFILE CHECKSUM: 2daf9b881f063c2daf492aecce4e22134ed1c34a
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.1.1
