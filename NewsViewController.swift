@@ -19,7 +19,13 @@ final class NewsViewController : UIViewController, IGListAdapterDataSource, UISc
         }()
         let collectionView = IGListCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         
-        lazy var items = Array(0...20)
+        let data: [Int] = {
+        var set = Set<Int>() // only use unique values
+        while set.count < 20 {
+            set.insert( Int(arc4random_uniform(200)) + 200 )
+        }
+        return Array(set)
+        }()
         var loading = false
         let spinToken = "spinner"
         
@@ -29,16 +35,16 @@ final class NewsViewController : UIViewController, IGListAdapterDataSource, UISc
             adapter.collectionView = collectionView
             adapter.dataSource = self
             adapter.scrollViewDelegate = self
-            ApiManager.getUserNews().subscribe(onNext: { (data) -> Void in
-                // Pumped out an int
-                print(data)
-            }, onError: { (error) -> Void in
-                // ERROR!
-            }, onCompleted: { () -> Void in
-                // There are no more signals
-            }) { () -> Void in
-                // We disposed this subscription
-            }
+//            ApiManager.getUserNews().subscribe(onNext: { (data) -> Void in
+//                // Pumped out an int
+//                print(data)
+//            }, onError: { (error) -> Void in
+//                // ERROR!
+//            }, onCompleted: { () -> Void in
+//                // There are no more signals
+//            }) { () -> Void in
+//                // We disposed this subscription
+//            }
         }
         
         override func viewDidLayoutSubviews() {
@@ -49,21 +55,16 @@ final class NewsViewController : UIViewController, IGListAdapterDataSource, UISc
         //MARK: IGListAdapterDataSource
         
         func objects(for listAdapter: IGListAdapter) -> [IGListDiffable] {
-            var objects = items as [IGListDiffable]
-            
-            if loading {
-                objects.append(spinToken as IGListDiffable)
-            }
-            
-            return objects
+            return data as [IGListDiffable]
         }
         
         func listAdapter(_ listAdapter: IGListAdapter, sectionControllerFor object: Any) -> IGListSectionController {
-            if let obj = object as? String, obj == spinToken {
-                return spinnerSectionController()
-            } else {
-                return LabelSectionController()
-            }
+//            if let obj = object as? String, obj == spinToken {
+//                return spinnerSectionController()
+//            } else {
+//                return WorkingRangeSectionController()
+//            }
+            return WorkingRangeSectionController()
         }
     
         func emptyView(for listAdapter: IGListAdapter) -> UIView? { return nil }
@@ -80,8 +81,8 @@ final class NewsViewController : UIViewController, IGListAdapterDataSource, UISc
                     sleep(2)
                     DispatchQueue.main.async {
                         self.loading = false
-                        let itemCount = self.items.count
-                        self.items.append(contentsOf: Array(itemCount..<itemCount + 100))
+                        //let itemCount = self.items.count
+                        //self.items.append(contentsOf: Array(itemCount..<itemCount + 100))
                         self.adapter.performUpdates(animated: true, completion: nil)
                     }
                 }

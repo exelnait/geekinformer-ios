@@ -8,23 +8,24 @@
     import Foundation
     import UIKit
     
-    class NewsCard{
+    class Card{
         
         var title:String
-        var author:String
+        var published_date:String
         var published_date_human:String
         var type:String
         var logo:UIImage
+        var author:String
         
-        
-        init(title: String, author: String, published_date_human: String, type: String, logo: UIImage)
+        init(title: String, author: String, published_date: String, published_date_human: String, type:String, logo: UIImage)
         {
-            self.title = title
             self.author = author
+            self.title = title
+            self.published_date = published_date
             self.published_date_human = published_date_human
             self.type = type
             self.logo = logo
         }
         
-}
-
+    }
+    
