@@ -174,19 +174,19 @@ final class WorkingRangeSectionController: IGListSectionController, IGListSectio
     //MARK: IGListWorkingRangeDelegate
     
     func listAdapter(_ listAdapter: IGListAdapter, sectionControllerWillEnterWorkingRange sectionController: IGListSectionController) {
-        guard downloadedImage == nil,
-            task == nil,
-            let urlString = urlString,
-            let url = URL(string: urlString)
-            else { return }
+//        guard downloadedImage == nil,
+//            task == nil,
+//            let urlString = urlString,
+//            let url = URL(string: urlString)
+//            else { return }
         
         let section = collectionContext?.section(for: self) ?? 0
         print("Downloading image \(urlString) for section \(section)")
         
-        task = URLSession.shared.dataTask(with: url) { data, response, err in
-            guard let data = data, let image = UIImage(data: data) else {
-                return print("Error downloading \(urlString): \(err)")
-            }
+//        task = URLSession.shared.dataTask(with: url) { data, response, err in
+//            guard let data = data, let image = UIImage(data: data) else {
+//                return print("Error downloading \(urlString): \(err)")
+//            }
             DispatchQueue.main.async {
 //                self.downloadedImage = image
 //                if let cell = self.collectionContext?.cellForItem(at: 1, sectionController: self) as? ImageCell {
@@ -202,8 +202,8 @@ final class WorkingRangeSectionController: IGListSectionController, IGListSectio
                                     print("stop")
                             })
             }
-        }
-        task?.resume()
+//        }
+//        task?.resume()
     }
     
     func listAdapter(_ listAdapter: IGListAdapter, sectionControllerDidExitWorkingRange sectionController: IGListSectionController) {}
