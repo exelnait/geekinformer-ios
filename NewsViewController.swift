@@ -35,16 +35,12 @@ final class NewsViewController : UIViewController, IGListAdapterDataSource, UISc
             adapter.collectionView = collectionView
             adapter.dataSource = self
             adapter.scrollViewDelegate = self
-//            ApiManager.getUserNews().subscribe(onNext: { (data) -> Void in
-//                // Pumped out an int
-//                print(data)
-//            }, onError: { (error) -> Void in
-//                // ERROR!
-//            }, onCompleted: { () -> Void in
-//                // There are no more signals
-//            }) { () -> Void in
-//                // We disposed this subscription
-//            }
+            ApiManager.getUserNews().subscribe(onNext: { (data) -> Void in
+                // Pumped out an int
+                self.listAdapter(<#T##listAdapter: IGListAdapter##IGListAdapter#>, sectionControllerFor: <#T##Any##Any#>)
+            }, onError: { (error) -> Void in
+                // ERROR!
+            })
         }
         
         override func viewDidLayoutSubviews() {
