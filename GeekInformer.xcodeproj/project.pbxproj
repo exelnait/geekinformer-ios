@@ -72,6 +72,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9B8AC3CD8A1F088CA61BB1BB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9B8AC98382CB50FF46517E82 /* Components */,
+				9B8AC921E43F154DBE1237F5 /* Models */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9B8AC5D000E91B4DD9737C6A /* NewsFeed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewsFeed;
+			sourceTree = "<group>";
+		};
+		9B8AC921E43F154DBE1237F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B8ACF1A09F427348C7C365A /* Cards */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B8AC98382CB50FF46517E82 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9B8AC5D000E91B4DD9737C6A /* NewsFeed */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9B8ACF1A09F427348C7C365A /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
 		AD8423EE33B71EF90877ED73 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +218,7 @@
 				AD8423EE33B71EF90877ED73 /* Pods */,
 				4388B6F77727AD4BE27F1F97 /* Frameworks */,
 				C3813AF41E4C8D990059E762 /* Supporting Files */,
+				9B8AC3CD8A1F088CA61BB1BB /* UI */,
 			);
 			sourceTree = "<group>";
 		};

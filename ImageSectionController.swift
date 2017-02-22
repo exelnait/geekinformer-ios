@@ -182,28 +182,6 @@ final class WorkingRangeSectionController: IGListSectionController, IGListSectio
         
         let section = collectionContext?.section(for: self) ?? 0
         print("Downloading image \(urlString) for section \(section)")
-        
-        task = URLSession.shared.dataTask(with: url) { data, response, err in
-            guard let data = data, let image = UIImage(data: data) else {
-                return print("Error downloading \(urlString): \(err)")
-            }
-            DispatchQueue.main.async {
-//                self.downloadedImage = image
-//                if let cell = self.collectionContext?.cellForItem(at: 1, sectionController: self) as? ImageCell {
-//                    cell.setImage(image: image)
-//                }
-                                ApiManager.getUserNews().subscribe(onNext: { (data) -> Void in
-                                    print("start")
-                                let image = data[section].logo
-                                self.downloadedImage = image
-                                if let cell = self.collectionContext?.cellForItem(at: 1, sectionController: self) as? ImageCell {
-                                    cell.setImage(image: image)
-                                }
-                                    print("stop")
-                            })
-            }
-        }
-        task?.resume()
     }
     
     func listAdapter(_ listAdapter: IGListAdapter, sectionControllerDidExitWorkingRange sectionController: IGListSectionController) {}
