@@ -61,39 +61,36 @@
         <scene sceneID="zPv-AV-gu8">
             <objects>
                 <collectionViewController id="0cd-nz-c1q" customClass="CardViewController" customModule="GeekInformer" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="KEM-77-f8D">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="KEM-77-f8D">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rYI-iG-m1Z">
-                            <size key="itemSize" width="94" height="95"/>
+                            <size key="itemSize" width="319" height="348"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="M5T-Bj-T8c" customClass="CellForCollectionView" customModule="GeekInformer" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="94" height="95"/>
+                                <rect key="frame" x="1" y="0.0" width="319" height="348"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="94" height="95"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="319" height="348"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uX1-xy-OCb">
-                                            <rect key="frame" x="0.0" y="0.0" width="94" height="95"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uX1-xy-OCb">
+                                            <rect key="frame" x="0.0" y="0.0" width="319" height="148"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzc-1c-ije">
-                                            <rect key="frame" x="26" y="37" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzc-1c-ije">
+                                            <rect key="frame" x="4" y="150" width="311" height="134"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </view>
-                                <constraints>
-                                    <constraint firstItem="uzc-1c-ije" firstAttribute="centerX" secondItem="M5T-Bj-T8c" secondAttribute="centerX" id="0hE-7i-jTu"/>
-                                    <constraint firstItem="uzc-1c-ije" firstAttribute="centerY" secondItem="M5T-Bj-T8c" secondAttribute="centerY" id="85D-HT-XW8"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="ImgView" destination="uX1-xy-OCb" id="dVR-t2-Rvn"/>
                                     <outlet property="label" destination="uzc-1c-ije" id="GrP-Lh-ZuF"/>

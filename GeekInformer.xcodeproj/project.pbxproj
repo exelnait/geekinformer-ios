@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5B5BE13DE1D4AE45E3E64E0B /* Pods_GeekInformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE31EE658FE34E427986F172 /* Pods_GeekInformer.framework */; };
 		C33465F81E5F9B66000AE76F /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33465F71E5F9B66000AE76F /* CardViewController.swift */; };
+		C34A3E291E64801700EC8F66 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E281E64801700EC8F66 /* Card.swift */; };
+		C34A3E2B1E64807E00EC8F66 /* YouTubeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */; };
+		C34A3E2D1E64808F00EC8F66 /* ItunesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E2C1E64808F00EC8F66 /* ItunesCard.swift */; };
 		C3E99D201E61A13B0041C812 /* CellForCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E99D1F1E61A13B0041C812 /* CellForCollectionView.swift */; };
 		C3E99D221E61AAFB0041C812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E99D211E61AAFB0041C812 /* ViewController.swift */; };
 		C3ED6CC01E50A9A200423208 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CBF1E50A9A100423208 /* ApiService.swift */; };
@@ -17,9 +20,6 @@
 		C3F58B501E44D19C00A23EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F58B4E1E44D19C00A23EC1 /* Main.storyboard */; };
 		C3F58B521E44D19C00A23EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F58B511E44D19C00A23EC1 /* Assets.xcassets */; };
 		C3F58B551E44D19C00A23EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F58B531E44D19C00A23EC1 /* LaunchScreen.storyboard */; };
-		C3FFD1B41E57A67B007F218D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FFD1B31E57A67B007F218D /* Card.swift */; };
-		C3FFD1B61E57AD90007F218D /* YouTubeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FFD1B51E57AD90007F218D /* YouTubeCard.swift */; };
-		C3FFD1B81E57AE13007F218D /* ItunesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FFD1B71E57AE13007F218D /* ItunesCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +27,9 @@
 		25929987CA8F4A6D22F0B119 /* Pods-GeekInformer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekInformer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeekInformer/Pods-GeekInformer.debug.xcconfig"; sourceTree = "<group>"; };
 		AE31EE658FE34E427986F172 /* Pods_GeekInformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekInformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33465F71E5F9B66000AE76F /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = SOURCE_ROOT; };
+		C34A3E281E64801700EC8F66 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = SOURCE_ROOT; };
+		C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeCard.swift; sourceTree = SOURCE_ROOT; };
+		C34A3E2C1E64808F00EC8F66 /* ItunesCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesCard.swift; sourceTree = SOURCE_ROOT; };
 		C3E99D1F1E61A13B0041C812 /* CellForCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForCollectionView.swift; sourceTree = SOURCE_ROOT; };
 		C3E99D211E61AAFB0041C812 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3ED6CBF1E50A9A100423208 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
@@ -37,9 +40,6 @@
 		C3F58B511E44D19C00A23EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3F58B541E44D19C00A23EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3F58B561E44D19C00A23EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = GeekInformer/Info.plist; sourceTree = "<group>"; };
-		C3FFD1B31E57A67B007F218D /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		C3FFD1B51E57AD90007F218D /* YouTubeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeCard.swift; sourceTree = "<group>"; };
-		C3FFD1B71E57AE13007F218D /* ItunesCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +99,9 @@
 		9B8ACF1A09F427348C7C365A /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				C34A3E281E64801700EC8F66 /* Card.swift */,
+				C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */,
+				C34A3E2C1E64808F00EC8F66 /* ItunesCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -155,16 +158,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C3813AF91E4CA93D0059E762 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C3FFD1B31E57A67B007F218D /* Card.swift */,
-				C3FFD1B51E57AD90007F218D /* YouTubeCard.swift */,
-				C3FFD1B71E57AE13007F218D /* ItunesCard.swift */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
 		C3ED6CBE1E50A95400423208 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,7 +173,6 @@
 				C3ED6CBE1E50A95400423208 /* API */,
 				C3813AEF1E4C8D250059E762 /* Application Delegate */,
 				C3813AF11E4C8D390059E762 /* View Controllers */,
-				C3813AF91E4CA93D0059E762 /* Classes */,
 				C3813AF31E4C8D7E0059E762 /* Storyboards */,
 				C3813AF21E4C8D5B0059E762 /* Resources */,
 				C3F58B481E44D19C00A23EC1 /* Products */,
@@ -323,15 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3FFD1B81E57AE13007F218D /* ItunesCard.swift in Sources */,
-				C3FFD1B61E57AD90007F218D /* YouTubeCard.swift in Sources */,
 				C3ED6CC01E50A9A200423208 /* ApiService.swift in Sources */,
 				C3E99D221E61AAFB0041C812 /* ViewController.swift in Sources */,
 				C3ED6CC21E50A9B500423208 /* ApiManager.swift in Sources */,
 				C3E99D201E61A13B0041C812 /* CellForCollectionView.swift in Sources */,
 				C3F58B4B1E44D19C00A23EC1 /* AppDelegate.swift in Sources */,
+				C34A3E291E64801700EC8F66 /* Card.swift in Sources */,
+				C34A3E2D1E64808F00EC8F66 /* ItunesCard.swift in Sources */,
 				C33465F81E5F9B66000AE76F /* CardViewController.swift in Sources */,
-				C3FFD1B41E57A67B007F218D /* Card.swift in Sources */,
+				C34A3E2B1E64807E00EC8F66 /* YouTubeCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
