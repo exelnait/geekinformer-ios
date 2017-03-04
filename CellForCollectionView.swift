@@ -11,6 +11,7 @@ import UIKit
 
 class CellForCollectionView: UICollectionViewCell {
     
+    @IBOutlet weak var Stack: UIStackView!
     @IBOutlet weak var ImgView: UIImageView!
     @IBOutlet weak var Label: UILabel!
     @IBOutlet weak var Logo_imgView: UIImageView!

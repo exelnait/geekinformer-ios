@@ -25,13 +25,11 @@ class CardViewController: UICollectionViewController{
         ApiManager.getUserNews().subscribe(onNext: { (data) -> Void in
             // Pumped out an int
             for i in 0...self.image.count-1{
-                if(data[i].type == "rss"){
                 self.image[i] = data[i].cover
                 self.text[i] = data[i].title
                 self.Logo_image[i] = data[i].logo
                 self.Company_text[i] = data[i].published_date_human
                 }
-            }
             self.collectionView?.reloadData()
         }, onError: { (error) -> Void in
             // ERROR!
@@ -51,6 +49,9 @@ class CardViewController: UICollectionViewController{
         cell.ImgView.image = image[indexPath.row]
         cell.Logo_imgView.image = Logo_image[indexPath.row]
         cell.time_label.text = Company_text[indexPath.row]
+        if(cell.ImgView.image == UIImage.init(named: "error.png")){
+            cell.Stack.removeArrangedSubview(cell.ImgView)
+        }
         return cell
     }
 }

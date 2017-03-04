@@ -48,6 +48,7 @@ class ApiManager{
             var modelName = "rss"
             for _ in 0...2 {
             for item in 0...data[modelName].count {
+                cover = UIImage.init()
                 title = data[modelName][item]["title"].stringValue
                 author = data[modelName][item]["author"].stringValue
                 published_date = data[modelName][item]["published_date"].stringValue

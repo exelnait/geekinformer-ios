@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+class CellForPodcast: UICollectionViewCell{
+    
+    @IBOutlet weak var Published_date_human: UILabel!
+    @IBOutlet weak var Logo: UIImageView!
+    @IBOutlet weak var Cover: UIImageView!
+    @IBOutlet weak var Author: UILabel!
+    @IBOutlet weak var Title: UILabel!
+}

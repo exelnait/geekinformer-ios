@@ -13,6 +13,7 @@
 		C34A3E2B1E64807E00EC8F66 /* YouTubeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */; };
 		C34A3E2D1E64808F00EC8F66 /* ItunesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E2C1E64808F00EC8F66 /* ItunesCard.swift */; };
 		C35C648B1E6AD05C001E2B16 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C35C648A1E6AD045001E2B16 /* Roboto-Regular.ttf */; };
+		C35C64941E6AE0BB001E2B16 /* CellForPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C64931E6AE0BB001E2B16 /* CellForPodcast.swift */; };
 		C3E99D201E61A13B0041C812 /* CellForCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E99D1F1E61A13B0041C812 /* CellForCollectionView.swift */; };
 		C3E99D221E61AAFB0041C812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E99D211E61AAFB0041C812 /* ViewController.swift */; };
 		C3ED6CC01E50A9A200423208 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CBF1E50A9A100423208 /* ApiService.swift */; };
@@ -32,6 +33,7 @@
 		C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeCard.swift; sourceTree = SOURCE_ROOT; };
 		C34A3E2C1E64808F00EC8F66 /* ItunesCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesCard.swift; sourceTree = SOURCE_ROOT; };
 		C35C648A1E6AD045001E2B16 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		C35C64931E6AE0BB001E2B16 /* CellForPodcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForPodcast.swift; sourceTree = "<group>"; };
 		C3E99D1F1E61A13B0041C812 /* CellForCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForCollectionView.swift; sourceTree = SOURCE_ROOT; };
 		C3E99D211E61AAFB0041C812 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3ED6CBF1E50A9A100423208 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C35C64921E6AE097001E2B16 /* For time */ = {
+			isa = PBXGroup;
+			children = (
+				C35C64931E6AE0BB001E2B16 /* CellForPodcast.swift */,
+			);
+			name = "For time";
+			sourceTree = "<group>";
+		};
 		C3813AEF1E4C8D250059E762 /* Application Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +192,7 @@
 				AD8423EE33B71EF90877ED73 /* Pods */,
 				4388B6F77727AD4BE27F1F97 /* Frameworks */,
 				C3813AF41E4C8D990059E762 /* Supporting Files */,
+				C35C64921E6AE097001E2B16 /* For time */,
 				9B8AC3CD8A1F088CA61BB1BB /* UI */,
 			);
 			sourceTree = "<group>";
@@ -319,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C35C64941E6AE0BB001E2B16 /* CellForPodcast.swift in Sources */,
 				C3ED6CC01E50A9A200423208 /* ApiService.swift in Sources */,
 				C3E99D221E61AAFB0041C812 /* ViewController.swift in Sources */,
 				C3ED6CC21E50A9B500423208 /* ApiManager.swift in Sources */,
