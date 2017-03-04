@@ -12,6 +12,7 @@
 		C34A3E291E64801700EC8F66 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E281E64801700EC8F66 /* Card.swift */; };
 		C34A3E2B1E64807E00EC8F66 /* YouTubeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */; };
 		C34A3E2D1E64808F00EC8F66 /* ItunesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E2C1E64808F00EC8F66 /* ItunesCard.swift */; };
+		C35C648B1E6AD05C001E2B16 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C35C648A1E6AD045001E2B16 /* Roboto-Regular.ttf */; };
 		C3E99D201E61A13B0041C812 /* CellForCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E99D1F1E61A13B0041C812 /* CellForCollectionView.swift */; };
 		C3E99D221E61AAFB0041C812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E99D211E61AAFB0041C812 /* ViewController.swift */; };
 		C3ED6CC01E50A9A200423208 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CBF1E50A9A100423208 /* ApiService.swift */; };
@@ -30,6 +31,7 @@
 		C34A3E281E64801700EC8F66 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = SOURCE_ROOT; };
 		C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeCard.swift; sourceTree = SOURCE_ROOT; };
 		C34A3E2C1E64808F00EC8F66 /* ItunesCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesCard.swift; sourceTree = SOURCE_ROOT; };
+		C35C648A1E6AD045001E2B16 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		C3E99D1F1E61A13B0041C812 /* CellForCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForCollectionView.swift; sourceTree = SOURCE_ROOT; };
 		C3E99D211E61AAFB0041C812 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3ED6CBF1E50A9A100423208 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		C3813AF41E4C8D990059E762 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C35C648A1E6AD045001E2B16 /* Roboto-Regular.ttf */,
 				C3F58B561E44D19C00A23EC1 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -254,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C35C648B1E6AD05C001E2B16 /* Roboto-Regular.ttf in Resources */,
 				C3F58B551E44D19C00A23EC1 /* LaunchScreen.storyboard in Resources */,
 				C3F58B521E44D19C00A23EC1 /* Assets.xcassets in Resources */,
 				C3F58B501E44D19C00A23EC1 /* Main.storyboard in Resources */,

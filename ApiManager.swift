@@ -58,13 +58,11 @@ class ApiManager{
                         logo = UIImage(data: data as Data)!
                         }
                     }
-                if(data[modelName][item]["cover"].stringValue != nil){
                 if let url = NSURL(string: data[modelName][item]["cover_big"].stringValue) {
                     if let data = NSData(contentsOf: url as URL) {
                         cover = UIImage(data: data as Data)!
                         }
                     }
-                }
                 if (modelName == "rss"){
                     cards.append(Card.init(title: title, author: author, published_date: published_date, published_date_human: published_date_human, type: type, logo: logo!, cover: cover!))
                 }
