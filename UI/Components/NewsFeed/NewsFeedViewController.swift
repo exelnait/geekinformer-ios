@@ -1,5 +1,5 @@
 //
-//  CardViewController.swift
+//  NewsFeedViewController.swift
 //  GeekInformer
 //
 //  Created by Рауф on 24.02.17.
@@ -24,19 +24,19 @@ class CardViewController: UICollectionViewController{
     }
     
     func loadCards(){
-        ApiManager.getUserNews().subscribe(onNext: { (data) -> Void in
-            // Pumped out an int
-            for i in 0...self.image.count-1{
-                self.image[i] = data[i].cover
-                self.text[i] = data[i].title
-                self.Logo_image[i] = data[i].logo
-                self.Company_text[i] = data[i].published_date_human
-                self.content_snippet[i] = data[i].content_snippet
-            }
-            self.collectionView?.reloadData()
-        }, onError: { (error) -> Void in
-            // ERROR!
-        })
+        ApiManager.getUserNews()
+                .subscribe(onNext: { (data) -> Void in
+                    for i in 0...self.image.count-1 {
+                        self.image[i] = data[i].cover
+                        self.text[i] = data[i].title
+                        self.Logo_image[i] = data[i].logo
+                        self.Company_text[i] = data[i].published_date_human
+                        self.content_snippet[i] = data[i].content_snippet
+                    }
+                    self.collectionView?.reloadData()
+                }, onError: { (error) -> Void in
+                    // ERROR!
+                })
     }
     
     override func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {

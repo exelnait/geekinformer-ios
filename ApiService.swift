@@ -5,11 +5,12 @@ import RxSwift
 import SwiftyJSON
 
 class ApiService{
-//    class func getUserNews() -> DataRequest {
-//        return Alamofire.request("https://geekinformer.net/api/1/news/last")
-//    }
     class func getUserNews() -> Observable<(HTTPURLResponse, Any)>{
-        print("request")
-        return requestJSON(.get, "https://geekinformer.net/api/1/news/last")
+        return RxAlamofire
+            .requestJSON(.get, "https://geekinformer.net/api/1/news/last")
+            .debug()
+            .catchError { error in
+                return Observable.never()
+            }
     }
 }
