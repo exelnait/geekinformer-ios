@@ -10,8 +10,9 @@ class Card{
     var logo:UIImage
     var author:String
     var cover:UIImage
+    var content_snippet:String
     
-    init(title: String, author: String, published_date: String, published_date_human: String, type:String, logo: UIImage, cover: UIImage)
+    init(title: String, author: String, published_date: String, published_date_human: String, type:String, logo: UIImage, cover: UIImage, content_snippet: String)
     {
         self.author = author
         self.title = title
@@ -20,6 +21,6 @@ class Card{
         self.type = type
         self.logo = logo
         self.cover = cover
+        self.content_snippet = content_snippet
     }
-    
 }

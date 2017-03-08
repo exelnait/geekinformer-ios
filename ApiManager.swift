@@ -44,6 +44,7 @@ class ApiManager{
             var video_id = String()
             var logo = UIImage.init(named: "error.png")
             var cover = UIImage.init(named: "error.png")
+            var content_snippet = String()
             
             var modelName = "rss"
             for _ in 0...2 {
@@ -54,6 +55,7 @@ class ApiManager{
                 published_date = data[modelName][item]["published_date"].stringValue
                 published_date_human = data[modelName][item]["published_date_human"].stringValue
                 type = data[modelName][item]["type"].stringValue
+                content_snippet = data[modelName][item]["content_snippet"].stringValue
                 if let url = NSURL(string: data[modelName][item]["logo"].stringValue) {
                     if let data = NSData(contentsOf: url as URL) {
                         logo = UIImage(data: data as Data)!
@@ -65,11 +67,11 @@ class ApiManager{
                         }
                     }
                 if (modelName == "rss"){
-                    cards.append(Card.init(title: title, author: author, published_date: published_date, published_date_human: published_date_human, type: type, logo: logo!, cover: cover!))
+                    cards.append(Card.init(title: title, author: author, published_date: published_date, published_date_human: published_date_human, type: type, logo: logo!, cover: cover!, content_snippet: content_snippet))
                 }
                 if (modelName == "youtube"){
                     video_id = data[modelName][item]["video_id"].stringValue
-                    cards.append(YouTubeCard.init(title: title, author: author, published_date: published_date, published_date_human: published_date_human, type: type, logo: logo!, cover: cover!, video_id: video_id))
+                    cards.append(YouTubeCard.init(title: title, author: author, published_date: published_date, published_date_human: published_date_human, type: type, logo: logo!, cover: cover!, video_id: video_id, content_snippet: content_snippet))
                 }
                 
                 }

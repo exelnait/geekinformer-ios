@@ -13,10 +13,10 @@
         var video_id:String
 
 
-        init(title: String, author: String, published_date: String , published_date_human: String, type: String, logo: UIImage, cover: UIImage, video_id: String)
+        init(title: String, author: String, published_date: String , published_date_human: String, type: String, logo: UIImage, cover: UIImage, video_id: String, content_snippet: String)
         {
             self.video_id = video_id
-            super.init(title: title, author: author, published_date: published_date, published_date_human: published_date_human, type: type, logo: logo, cover: cover)
+            super.init(title: title, author: author, published_date: published_date, published_date_human: published_date_human, type: type, logo: logo, cover: cover, content_snippet: content_snippet)
         }
 
     }
