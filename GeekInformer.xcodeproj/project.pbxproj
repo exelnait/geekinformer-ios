@@ -8,16 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5B5BE13DE1D4AE45E3E64E0B /* Pods_GeekInformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE31EE658FE34E427986F172 /* Pods_GeekInformer.framework */; };
-		9B8AC4E605BBD848AED4B94D /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8ACFD4A24D51D8EB6879A8 /* NewsFeedViewController.swift */; };
-		9B8ACBB1B8CFA6504D035484 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AC7CFBDB8383F28884ECA /* NewsFeedCell.swift */; };
-		C34A3E291E64801700EC8F66 /* RSSCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E281E64801700EC8F66 /* RSSCard.swift */; };
 		C34A3E2B1E64807E00EC8F66 /* YouTubeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */; };
 		C34A3E2D1E64808F00EC8F66 /* ITunesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E2C1E64808F00EC8F66 /* ITunesCard.swift */; };
 		C35C64941E6AE0BB001E2B16 /* CellForPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C64931E6AE0BB001E2B16 /* CellForPodcast.swift */; };
 		C370780A1E7419DD002E9270 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37078091E7419DD002E9270 /* Parse.swift */; };
 		C370780C1E742046002E9270 /* RssCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C370780B1E742046002E9270 /* RssCard.swift */; };
+		C3A4E9DB1E78A79200719A74 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A4E9DA1E78A79200719A74 /* Card.swift */; };
+		C3A4E9DD1E78A7D600719A74 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A4E9DC1E78A7D600719A74 /* CardViewController.swift */; };
 		C3B1AC811E76D037006418D4 /* RssCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B1AC801E76D037006418D4 /* RssCell.swift */; };
-		C3E99D201E61A13B0041C812 /* CellForCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E99D1F1E61A13B0041C812 /* CellForCollectionView.swift */; };
 		C3E99D221E61AAFB0041C812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E99D211E61AAFB0041C812 /* ViewController.swift */; };
 		C3ED6CC01E50A9A200423208 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CBF1E50A9A100423208 /* ApiService.swift */; };
 		C3ED6CC21E50A9B500423208 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CC11E50A9B500423208 /* ApiManager.swift */; };
@@ -31,16 +29,15 @@
 		15234063244D64E133449F86 /* Pods-GeekInformer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekInformer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeekInformer/Pods-GeekInformer.release.xcconfig"; sourceTree = "<group>"; };
 		25929987CA8F4A6D22F0B119 /* Pods-GeekInformer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekInformer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeekInformer/Pods-GeekInformer.debug.xcconfig"; sourceTree = "<group>"; };
 		9B8AC7CFBDB8383F28884ECA /* NewsFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
-		9B8ACFD4A24D51D8EB6879A8 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
 		AE31EE658FE34E427986F172 /* Pods_GeekInformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekInformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C34A3E281E64801700EC8F66 /* RSSCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSCard.swift; sourceTree = SOURCE_ROOT; };
 		C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeCard.swift; sourceTree = SOURCE_ROOT; };
 		C34A3E2C1E64808F00EC8F66 /* ITunesCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesCard.swift; sourceTree = SOURCE_ROOT; };
 		C35C64931E6AE0BB001E2B16 /* CellForPodcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForPodcast.swift; sourceTree = "<group>"; };
 		C37078091E7419DD002E9270 /* Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
 		C370780B1E742046002E9270 /* RssCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssCard.swift; sourceTree = SOURCE_ROOT; };
+		C3A4E9DA1E78A79200719A74 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = SOURCE_ROOT; };
+		C3A4E9DC1E78A7D600719A74 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		C3B1AC801E76D037006418D4 /* RssCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssCell.swift; sourceTree = SOURCE_ROOT; };
-		C3E99D1F1E61A13B0041C812 /* CellForCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForCollectionView.swift; sourceTree = SOURCE_ROOT; };
 		C3E99D211E61AAFB0041C812 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3ED6CBF1E50A9A100423208 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		C3ED6CC11E50A9B500423208 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -84,7 +81,7 @@
 		9B8AC5D000E91B4DD9737C6A /* NewsFeed */ = {
 			isa = PBXGroup;
 			children = (
-				9B8ACFD4A24D51D8EB6879A8 /* NewsFeedViewController.swift */,
+				C3A4E9DC1E78A7D600719A74 /* CardViewController.swift */,
 				9B8AC7CFBDB8383F28884ECA /* NewsFeedCell.swift */,
 			);
 			path = NewsFeed;
@@ -109,10 +106,10 @@
 		9B8ACF1A09F427348C7C365A /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				C34A3E281E64801700EC8F66 /* Card.swift */,
+				C3A4E9DA1E78A79200719A74 /* Card.swift */,
 				C370780B1E742046002E9270 /* RssCard.swift */,
 				C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */,
-				C34A3E2C1E64808F00EC8F66 /* ItunesCard.swift */,
+				C34A3E2C1E64808F00EC8F66 /* ITunesCard.swift */,
 				C3B1AC801E76D037006418D4 /* RssCell.swift */,
 			);
 			path = Cards;
@@ -343,12 +340,12 @@
 				C3ED6CC21E50A9B500423208 /* ApiManager.swift in Sources */,
 				C3F58B4B1E44D19C00A23EC1 /* AppDelegate.swift in Sources */,
 				C370780C1E742046002E9270 /* RssCard.swift in Sources */,
-				C34A3E291E64801700EC8F66 /* Card.swift in Sources */,
-				C34A3E2D1E64808F00EC8F66 /* ItunesCard.swift in Sources */,
-				C33465F81E5F9B66000AE76F /* CardViewController.swift in Sources */,
+				C34A3E2D1E64808F00EC8F66 /* ITunesCard.swift in Sources */,
 				C370780A1E7419DD002E9270 /* Parse.swift in Sources */,
+				C3A4E9DD1E78A7D600719A74 /* CardViewController.swift in Sources */,
 				C34A3E2B1E64807E00EC8F66 /* YouTubeCard.swift in Sources */,
 				C3B1AC811E76D037006418D4 /* RssCell.swift in Sources */,
+				C3A4E9DB1E78A79200719A74 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
