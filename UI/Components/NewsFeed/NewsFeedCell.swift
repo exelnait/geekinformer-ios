@@ -1,5 +1,5 @@
 //
-//  CellForCollectionView.swift
+//  NewsFeedCell.swift
 //  GeekInformer
 //
 //  Created by Рауф on 25.02.17.

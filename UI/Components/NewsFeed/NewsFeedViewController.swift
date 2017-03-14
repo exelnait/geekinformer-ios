@@ -1,5 +1,5 @@
 //
-//  CardViewController.swift
+//  NewsFeedViewController.swift
 //  GeekInformer
 //
 //  Created by Рауф on 24.02.17.
