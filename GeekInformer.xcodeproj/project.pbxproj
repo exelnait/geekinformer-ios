@@ -14,6 +14,9 @@
 		C34A3E2D1E64808F00EC8F66 /* ItunesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E2C1E64808F00EC8F66 /* ItunesCard.swift */; };
 		C35C648B1E6AD05C001E2B16 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C35C648A1E6AD045001E2B16 /* Roboto-Regular.ttf */; };
 		C35C64941E6AE0BB001E2B16 /* CellForPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C64931E6AE0BB001E2B16 /* CellForPodcast.swift */; };
+		C370780A1E7419DD002E9270 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37078091E7419DD002E9270 /* Parse.swift */; };
+		C370780C1E742046002E9270 /* RssCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C370780B1E742046002E9270 /* RssCard.swift */; };
+		C3B1AC811E76D037006418D4 /* RssCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B1AC801E76D037006418D4 /* RssCell.swift */; };
 		C3E99D201E61A13B0041C812 /* CellForCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E99D1F1E61A13B0041C812 /* CellForCollectionView.swift */; };
 		C3E99D221E61AAFB0041C812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E99D211E61AAFB0041C812 /* ViewController.swift */; };
 		C3ED6CC01E50A9A200423208 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CBF1E50A9A100423208 /* ApiService.swift */; };
@@ -34,6 +37,9 @@
 		C34A3E2C1E64808F00EC8F66 /* ItunesCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesCard.swift; sourceTree = SOURCE_ROOT; };
 		C35C648A1E6AD045001E2B16 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		C35C64931E6AE0BB001E2B16 /* CellForPodcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForPodcast.swift; sourceTree = "<group>"; };
+		C37078091E7419DD002E9270 /* Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
+		C370780B1E742046002E9270 /* RssCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssCard.swift; sourceTree = SOURCE_ROOT; };
+		C3B1AC801E76D037006418D4 /* RssCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssCell.swift; sourceTree = SOURCE_ROOT; };
 		C3E99D1F1E61A13B0041C812 /* CellForCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForCollectionView.swift; sourceTree = SOURCE_ROOT; };
 		C3E99D211E61AAFB0041C812 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3ED6CBF1E50A9A100423208 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
@@ -104,8 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				C34A3E281E64801700EC8F66 /* Card.swift */,
+				C370780B1E742046002E9270 /* RssCard.swift */,
 				C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */,
 				C34A3E2C1E64808F00EC8F66 /* ItunesCard.swift */,
+				C3B1AC801E76D037006418D4 /* RssCell.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 			children = (
 				C3ED6CBF1E50A9A100423208 /* ApiService.swift */,
 				C3ED6CC11E50A9B500423208 /* ApiManager.swift */,
+				C37078091E7419DD002E9270 /* Parse.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -336,10 +345,13 @@
 				C3ED6CC21E50A9B500423208 /* ApiManager.swift in Sources */,
 				C3E99D201E61A13B0041C812 /* CellForCollectionView.swift in Sources */,
 				C3F58B4B1E44D19C00A23EC1 /* AppDelegate.swift in Sources */,
+				C370780C1E742046002E9270 /* RssCard.swift in Sources */,
 				C34A3E291E64801700EC8F66 /* Card.swift in Sources */,
 				C34A3E2D1E64808F00EC8F66 /* ItunesCard.swift in Sources */,
 				C33465F81E5F9B66000AE76F /* CardViewController.swift in Sources */,
+				C370780A1E7419DD002E9270 /* Parse.swift in Sources */,
 				C34A3E2B1E64807E00EC8F66 /* YouTubeCard.swift in Sources */,
+				C3B1AC811E76D037006418D4 /* RssCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

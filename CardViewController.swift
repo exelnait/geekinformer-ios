@@ -12,65 +12,60 @@ import UIKit
 import RxSwift
 
 
-class CardViewController: UICollectionViewController{
-    var image: [UIImage] = [#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error")]
-    var Logo_image: [UIImage] = [#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error"),#imageLiteral(resourceName: "error")]
-    var text: [String] = ["loading","loading","loading","loading","loading","loading","loading","loading","loading"]
-    var Company_text: [String] = ["loading","loading","loading","loading","loading","loading","loading","loading","loading"]
-    var content_snippet: [String] = ["loading","loading","loading","loading","loading","loading","loading","loading","loading"]
+class CardViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
+    
+    fileprivate let rssCard = "rssCard"
+    //fileprivate let rssImage = "rssImage"
+    var cards: [Card]?
+    
     override func viewDidLoad() {
-    super.viewDidLoad()
-     loadCards()
-    }
-    
-    func loadCards(){
-        ApiManager.getUserNews().subscribe(onNext: { (data) -> Void in
-            // Pumped out an int
-            for i in 0...self.image.count-1{
-                self.image[i] = data[i].cover
-                self.text[i] = data[i].title
-                self.Logo_image[i] = data[i].logo
-                self.Company_text[i] = data[i].published_date_human
-                self.content_snippet[i] = data[i].content_snippet
-            }
+        super.viewDidLoad()
+        
+        Parse.getNews().subscribe(onNext: { (data) -> Void in
+            self.cards = data
             self.collectionView?.reloadData()
-        }, onError: { (error) -> Void in
-            // ERROR!
         })
-    }
-    
-    override func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
-        print("SCrollView to Top")
-        loadCards()
+        
+        collectionView?.backgroundColor = UIColor.white
+        
+        collectionView?.register(RssCell.self, forCellWithReuseIdentifier: rssCard)
+        //collectionView?.register(RssImageCell.self, forCellWithReuseIdentifier: rssImage)
+        
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return image.count
+        if let count = cards?.count {
+            return count
+        }
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize.init(width: view.frame.width, height: 300)
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CellForCollectionView
-        cell.backgroundColor = UIColor.white
-        cell.Label.text = text[indexPath.row]
-        cell.ImgView.image = image[indexPath.row]
-        cell.Logo_imgView.image = Logo_image[indexPath.row]
-        cell.time_label.text = Company_text[indexPath.row]
-        cell.Content_snippet.text = content_snippet[indexPath.row]
-        //if(cell.ImgView.image?.size == CGSize.init(width: 0, height: 0)){
-        if(cell.ImgView.image?.cgImage == nil){
-            print("1")
-            cell.Stack.removeArrangedSubview(cell.ImgView)
-            cell.Stack.removeArrangedSubview(cell.Content_snippet)
-            cell.Stack.addArrangedSubview(cell.Content_snippet)
-            //cell.Stack.addSubview(cell.Content_snippet)
+        
+        let cell: RssCell
+        
+        cell = collectionView.dequeueReusableCell(withReuseIdentifier: rssCard, for: indexPath) as! RssCell
+        
+        
+        cell.nameLabel.text = cards?[indexPath.item].title
+        cell.image.image = cards?[indexPath.item].cover
+        cell.logoImage.image = cards?[indexPath.item].logo
+        cell.author.text = cards?[indexPath.item].author
+        cell.date.text = cards?[indexPath.item].published_date_human
+        if(cards?[indexPath.item].type == "rss" && cards?[indexPath.item].cover == nil){
+            cell.content.text = (cards?[indexPath.item] as! RssCard).content_snippet
         }
-        //if(cell.ImgView.image?.size != CGSize.init(width: 0, height: 0) ){
-        if(cell.ImgView.image?.cgImage != nil){
-            print(cell.Label)
-            cell.Content_snippet.text = ""
-            cell.Stack.addArrangedSubview(cell.Label)
-            //cell.Stack.removeArrangedSubview(cell.Label)
+        else {
+            cell.content.text = ""
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.init(top: 10, left: 0, bottom: 10, right: 0)
     }
 }

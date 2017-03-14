@@ -1,4 +1,10 @@
-import Foundation
+//  trends.swift
+//  GeekInformer
+
+//  Created by Рауф on 04.02.17.
+//  Copyright © 2017 Рауф. All rights reserved.
+//
+
 import UIKit
 
 class Card{
@@ -10,9 +16,8 @@ class Card{
     var logo:UIImage
     var author:String
     var cover:UIImage
-    var content_snippet:String
     
-    init(title: String, author: String, published_date: String, published_date_human: String, type:String, logo: UIImage, cover: UIImage, content_snippet: String)
+    init(title: String, author: String, published_date: String, published_date_human: String, type:String, logo: UIImage, cover: UIImage)
     {
         self.author = author
         self.title = title
@@ -21,6 +26,5 @@ class Card{
         self.type = type
         self.logo = logo
         self.cover = cover
-        self.content_snippet = content_snippet
     }
 }

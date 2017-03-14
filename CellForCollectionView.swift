@@ -15,7 +15,7 @@ class CellForCollectionView: UICollectionViewCell {
     @IBOutlet weak var ImgView: UIImageView!
     @IBOutlet weak var Label: UILabel!
     @IBOutlet weak var Logo_imgView: UIImageView!
-    @IBOutlet weak var site_name: UILabel!
-    @IBOutlet weak var time_label: UILabel!
+    @IBOutlet weak var Site_name: UILabel!
+    @IBOutlet weak var Time_label: UILabel!
     @IBOutlet weak var Content_snippet: UILabel!
 }
