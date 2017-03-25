@@ -45,7 +45,7 @@ class Parse{
                             logo = UIImage(data: data as Data)!
                         }
                     }
-                    if let url = NSURL(string: data[typeid][item]["cover_big"].stringValue) {
+                    if let url = NSURL(string: data[typeid][item]["cover"].stringValue) {
                         if let data = NSData(contentsOf: url as URL) {
                             cover = UIImage(data: data as Data)!
                         }

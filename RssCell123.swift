@@ -9,7 +9,7 @@
 import UIKit
 
 
-class RssCell : UICollectionViewCell{
+class RssCell123 : UICollectionViewCell{
     
     
     override init(frame: CGRect){

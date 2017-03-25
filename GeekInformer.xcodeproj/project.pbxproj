@@ -8,14 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		5B5BE13DE1D4AE45E3E64E0B /* Pods_GeekInformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE31EE658FE34E427986F172 /* Pods_GeekInformer.framework */; };
-		C34A3E2B1E64807E00EC8F66 /* YouTubeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */; };
-		C34A3E2D1E64808F00EC8F66 /* ITunesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A3E2C1E64808F00EC8F66 /* ITunesCard.swift */; };
-		C35C64941E6AE0BB001E2B16 /* CellForPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C64931E6AE0BB001E2B16 /* CellForPodcast.swift */; };
+		C33437F41E7B3B9300FBDB34 /* RssCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33437F31E7B3B9300FBDB34 /* RssCell.xib */; };
 		C370780A1E7419DD002E9270 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37078091E7419DD002E9270 /* Parse.swift */; };
-		C370780C1E742046002E9270 /* RssCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C370780B1E742046002E9270 /* RssCard.swift */; };
-		C3A4E9DB1E78A79200719A74 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A4E9DA1E78A79200719A74 /* Card.swift */; };
+		C371E18B1E801D2E00C2A1B5 /* ItunesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371E18A1E801D2E00C2A1B5 /* ItunesCell.swift */; };
+		C371E18F1E80203300C2A1B5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371E18E1E80203300C2A1B5 /* Card.swift */; };
+		C371E1931E80229200C2A1B5 /* ItunesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371E1901E80229200C2A1B5 /* ItunesCard.swift */; };
+		C371E1941E80229200C2A1B5 /* RssCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371E1911E80229200C2A1B5 /* RssCard.swift */; };
+		C371E1951E80229200C2A1B5 /* YouTubeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371E1921E80229200C2A1B5 /* YouTubeCard.swift */; };
+		C3A445DA1E8688F40054F04D /* YouTubeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A445D81E8688F40054F04D /* YouTubeCell.swift */; };
+		C3A445DB1E8688F40054F04D /* YouTubeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A445D91E8688F40054F04D /* YouTubeCell.xib */; };
 		C3A4E9DD1E78A7D600719A74 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A4E9DC1E78A7D600719A74 /* CardViewController.swift */; };
-		C3B1AC811E76D037006418D4 /* RssCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B1AC801E76D037006418D4 /* RssCell.swift */; };
+		C3CFB4111E7B33FA00CC1DCB /* RssCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CFB4101E7B33FA00CC1DCB /* RssCell.swift */; };
+		C3D2A4F01E7C9E810037762B /* ItunesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D2A4EF1E7C9E810037762B /* ItunesCell.xib */; };
+		C3D7E3DF1E7ABED900B2EF6D /* RssCell_Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7E3DD1E7ABED900B2EF6D /* RssCell_Image.swift */; };
+		C3D7E3E01E7ABED900B2EF6D /* RssCell(Image).xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D7E3DE1E7ABED900B2EF6D /* RssCell(Image).xib */; };
 		C3E99D221E61AAFB0041C812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E99D211E61AAFB0041C812 /* ViewController.swift */; };
 		C3ED6CC01E50A9A200423208 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CBF1E50A9A100423208 /* ApiService.swift */; };
 		C3ED6CC21E50A9B500423208 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED6CC11E50A9B500423208 /* ApiManager.swift */; };
@@ -28,16 +34,21 @@
 /* Begin PBXFileReference section */
 		15234063244D64E133449F86 /* Pods-GeekInformer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekInformer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeekInformer/Pods-GeekInformer.release.xcconfig"; sourceTree = "<group>"; };
 		25929987CA8F4A6D22F0B119 /* Pods-GeekInformer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekInformer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeekInformer/Pods-GeekInformer.debug.xcconfig"; sourceTree = "<group>"; };
-		9B8AC7CFBDB8383F28884ECA /* NewsFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
 		AE31EE658FE34E427986F172 /* Pods_GeekInformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekInformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeCard.swift; sourceTree = SOURCE_ROOT; };
-		C34A3E2C1E64808F00EC8F66 /* ITunesCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesCard.swift; sourceTree = SOURCE_ROOT; };
-		C35C64931E6AE0BB001E2B16 /* CellForPodcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForPodcast.swift; sourceTree = "<group>"; };
+		C33437F31E7B3B9300FBDB34 /* RssCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RssCell.xib; sourceTree = "<group>"; };
 		C37078091E7419DD002E9270 /* Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
-		C370780B1E742046002E9270 /* RssCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssCard.swift; sourceTree = SOURCE_ROOT; };
-		C3A4E9DA1E78A79200719A74 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = SOURCE_ROOT; };
+		C371E18A1E801D2E00C2A1B5 /* ItunesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItunesCell.swift; path = GeekInformer/ItunesCell.swift; sourceTree = SOURCE_ROOT; };
+		C371E18E1E80203300C2A1B5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = GeekInformer/Card.swift; sourceTree = SOURCE_ROOT; };
+		C371E1901E80229200C2A1B5 /* ItunesCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesCard.swift; sourceTree = SOURCE_ROOT; };
+		C371E1911E80229200C2A1B5 /* RssCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssCard.swift; sourceTree = SOURCE_ROOT; };
+		C371E1921E80229200C2A1B5 /* YouTubeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeCard.swift; sourceTree = SOURCE_ROOT; };
+		C3A445D81E8688F40054F04D /* YouTubeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YouTubeCell.swift; path = GeekInformer/YouTubeCell.swift; sourceTree = SOURCE_ROOT; };
+		C3A445D91E8688F40054F04D /* YouTubeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YouTubeCell.xib; sourceTree = "<group>"; };
 		C3A4E9DC1E78A7D600719A74 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
-		C3B1AC801E76D037006418D4 /* RssCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssCell.swift; sourceTree = SOURCE_ROOT; };
+		C3CFB4101E7B33FA00CC1DCB /* RssCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RssCell.swift; path = GeekInformer/RssCell.swift; sourceTree = SOURCE_ROOT; };
+		C3D2A4EF1E7C9E810037762B /* ItunesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItunesCell.xib; sourceTree = "<group>"; };
+		C3D7E3DD1E7ABED900B2EF6D /* RssCell_Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RssCell_Image.swift; path = GeekInformer/RssCell_Image.swift; sourceTree = SOURCE_ROOT; };
+		C3D7E3DE1E7ABED900B2EF6D /* RssCell(Image).xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "RssCell(Image).xib"; path = "GeekInformer/RssCell(Image).xib"; sourceTree = SOURCE_ROOT; };
 		C3E99D211E61AAFB0041C812 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3ED6CBF1E50A9A100423208 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		C3ED6CC11E50A9B500423208 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -82,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				C3A4E9DC1E78A7D600719A74 /* CardViewController.swift */,
-				9B8AC7CFBDB8383F28884ECA /* NewsFeedCell.swift */,
 			);
 			path = NewsFeed;
 			sourceTree = "<group>";
@@ -91,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				9B8ACF1A09F427348C7C365A /* Cards */,
+				C3A445DC1E8690ED0054F04D /* Cell */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,11 +117,10 @@
 		9B8ACF1A09F427348C7C365A /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				C3A4E9DA1E78A79200719A74 /* Card.swift */,
-				C370780B1E742046002E9270 /* RssCard.swift */,
-				C34A3E2A1E64807E00EC8F66 /* YouTubeCard.swift */,
-				C34A3E2C1E64808F00EC8F66 /* ITunesCard.swift */,
-				C3B1AC801E76D037006418D4 /* RssCell.swift */,
+				C371E18E1E80203300C2A1B5 /* Card.swift */,
+				C371E1901E80229200C2A1B5 /* ItunesCard.swift */,
+				C371E1911E80229200C2A1B5 /* RssCard.swift */,
+				C371E1921E80229200C2A1B5 /* YouTubeCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -122,14 +132,6 @@
 				15234063244D64E133449F86 /* Pods-GeekInformer.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		C35C64921E6AE097001E2B16 /* For time */ = {
-			isa = PBXGroup;
-			children = (
-				C35C64931E6AE0BB001E2B16 /* CellForPodcast.swift */,
-			);
-			name = "For time";
 			sourceTree = "<group>";
 		};
 		C3813AEF1E4C8D250059E762 /* Application Delegate */ = {
@@ -162,6 +164,10 @@
 			children = (
 				C3F58B4E1E44D19C00A23EC1 /* Main.storyboard */,
 				C3F58B531E44D19C00A23EC1 /* LaunchScreen.storyboard */,
+				C33437F31E7B3B9300FBDB34 /* RssCell.xib */,
+				C3D7E3DE1E7ABED900B2EF6D /* RssCell(Image).xib */,
+				C3D2A4EF1E7C9E810037762B /* ItunesCell.xib */,
+				C3A445D91E8688F40054F04D /* YouTubeCell.xib */,
 			);
 			name = Storyboards;
 			path = GeekInformer;
@@ -173,6 +179,18 @@
 				C3F58B561E44D19C00A23EC1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3A445DC1E8690ED0054F04D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C3CFB4101E7B33FA00CC1DCB /* RssCell.swift */,
+				C3D7E3DD1E7ABED900B2EF6D /* RssCell_Image.swift */,
+				C371E18A1E801D2E00C2A1B5 /* ItunesCell.swift */,
+				C3A445D81E8688F40054F04D /* YouTubeCell.swift */,
+			);
+			name = Cell;
+			path = Cards;
 			sourceTree = "<group>";
 		};
 		C3ED6CBE1E50A95400423208 /* API */ = {
@@ -197,7 +215,6 @@
 				AD8423EE33B71EF90877ED73 /* Pods */,
 				4388B6F77727AD4BE27F1F97 /* Frameworks */,
 				C3813AF41E4C8D990059E762 /* Supporting Files */,
-				C35C64921E6AE097001E2B16 /* For time */,
 				9B8AC3CD8A1F088CA61BB1BB /* UI */,
 			);
 			sourceTree = "<group>";
@@ -274,8 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3F58B551E44D19C00A23EC1 /* LaunchScreen.storyboard in Resources */,
+				C3D2A4F01E7C9E810037762B /* ItunesCell.xib in Resources */,
+				C33437F41E7B3B9300FBDB34 /* RssCell.xib in Resources */,
 				C3F58B521E44D19C00A23EC1 /* Assets.xcassets in Resources */,
 				C3F58B501E44D19C00A23EC1 /* Main.storyboard in Resources */,
+				C3A445DB1E8688F40054F04D /* YouTubeCell.xib in Resources */,
+				C3D7E3E01E7ABED900B2EF6D /* RssCell(Image).xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,18 +355,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C35C64941E6AE0BB001E2B16 /* CellForPodcast.swift in Sources */,
+				C3CFB4111E7B33FA00CC1DCB /* RssCell.swift in Sources */,
+				C371E1931E80229200C2A1B5 /* ItunesCard.swift in Sources */,
+				C371E1941E80229200C2A1B5 /* RssCard.swift in Sources */,
+				C3D7E3DF1E7ABED900B2EF6D /* RssCell_Image.swift in Sources */,
 				C3ED6CC01E50A9A200423208 /* ApiService.swift in Sources */,
 				C3E99D221E61AAFB0041C812 /* ViewController.swift in Sources */,
+				C371E18B1E801D2E00C2A1B5 /* ItunesCell.swift in Sources */,
 				C3ED6CC21E50A9B500423208 /* ApiManager.swift in Sources */,
+				C371E18F1E80203300C2A1B5 /* Card.swift in Sources */,
 				C3F58B4B1E44D19C00A23EC1 /* AppDelegate.swift in Sources */,
-				C370780C1E742046002E9270 /* RssCard.swift in Sources */,
-				C34A3E2D1E64808F00EC8F66 /* ITunesCard.swift in Sources */,
+				C371E1951E80229200C2A1B5 /* YouTubeCard.swift in Sources */,
 				C370780A1E7419DD002E9270 /* Parse.swift in Sources */,
+				C3A445DA1E8688F40054F04D /* YouTubeCell.swift in Sources */,
 				C3A4E9DD1E78A7D600719A74 /* CardViewController.swift in Sources */,
-				C34A3E2B1E64807E00EC8F66 /* YouTubeCard.swift in Sources */,
-				C3B1AC811E76D037006418D4 /* RssCell.swift in Sources */,
-				C3A4E9DB1E78A79200719A74 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
